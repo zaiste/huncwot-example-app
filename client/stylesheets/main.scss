@@ -1,0 +1,65 @@
+body {
+  margin-top: 2rem;
+}
+
+.title {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+ul.nav {
+  margin-bottom: 1rem;
+}
+
+// Callouts
+
+$color-info: #5bc0de !default;
+$color-warning: #f0ad4e !default;
+$color-danger: #d9534f !default;
+
+.callout {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #eee;
+  border-left-width: 0.25rem;
+  border-radius: 0.25rem;
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  code {
+    border-radius: 0.25rem;
+  }
+
+  + .callout {
+    margin-top: -0.25rem;
+  }
+}
+
+// Variations
+@mixin callout-variant($color) {
+  border-left-color: $color;
+
+  h4 {
+    color: $color;
+  }
+}
+
+.callout-info {
+  @include callout-variant($color-info);
+}
+.callout-warning {
+  @include callout-variant($color-warning);
+}
+.callout-danger {
+  @include callout-variant($color-danger);
+}
