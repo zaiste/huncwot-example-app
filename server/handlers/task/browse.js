@@ -7,9 +7,9 @@ import db from 'huncwot/db';
 const browse = async ({ params }) => {
   //const errors = schema.validate(params);
 
-  const results = await db`task`.order`id asc`;
+  const results = await db`task`.orderBy`id desc`;
 
   return ok(results);
-}
+};
 
 module.exports = browse;
