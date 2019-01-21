@@ -1,0 +1,6 @@
+{
+  db: {
+    database: 'huncwot_example_app',
+    username: 'zaiste'
+  }
+}
