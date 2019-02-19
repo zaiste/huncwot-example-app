@@ -30,7 +30,7 @@
     "validate": "^4.5.1",
     "vue": "2.6.6",
     "vue-apollo": "^3.0.0-beta.28",
-    "vue-class-component": "^6.3.2",
+    "vue-class-component": "^7.0.1",
     "vue-property-decorator": "^7.3.0",
     "vue-router": "^3.0.2",
     "vuex": "^3.1.0"
@@ -41,8 +41,8 @@
     "not ie <= 8"
   ],
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
     "@babel/plugin-proposal-decorators": "^7.3.0",
     "@babel/plugin-proposal-json-strings": "^7.2.0",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
@@ -67,10 +67,10 @@
     "sass-loader": "^7.1.0",
     "stmux": "^1.6.1",
     "typescript": "^3.3.3",
-    "vue-loader": "^15.6.2",
+    "vue-loader": "^15.6.3",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "2.6.6",
-    "webpack": "4.29.4",
+    "webpack": "4.29.5",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14",
     "webpack-merge": "^4.2.1"
