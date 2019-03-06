@@ -133,7 +133,7 @@ export default class Tasks extends Vue {
   query: any = "";
 
   async created() {
-    Task.fetch();
+    Task.browse();
   }
 
   add() {
