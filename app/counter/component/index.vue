@@ -28,7 +28,7 @@ import { sync, get, action, getter, field, namespace } from "huncwot/store";
 
 const counter = namespace("counter");
 
-import Docs from "base:/component/Docs.vue";
+import Docs from "~/base/component/Docs.vue";
 
 @Component({ docs: true, components: { Docs } })
 export default class extends Vue {

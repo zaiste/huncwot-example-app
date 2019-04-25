@@ -27,7 +27,7 @@ const query = gql`
 `;
 
 import { Component, Vue } from "vue-property-decorator";
-import Docs from "./Docs.vue";
+import Docs from "~/base/component/Docs.vue";
 
 @Component({
   docs: true,

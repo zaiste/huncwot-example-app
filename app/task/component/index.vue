@@ -104,8 +104,8 @@ huncwot db setup</code></pre>
 import { Component, Vue } from "vue-property-decorator";
 import { sync, get, action, getter, field, namespace } from "huncwot/store";
 
-import Task from "features:/task/model";
-import Docs from "base:/component/Docs.vue";
+import Task from "~/task/model";
+import Docs from "~/base/component/Docs.vue";
 
 const task = namespace("task");
 

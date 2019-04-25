@@ -1,7 +1,6 @@
 const path = require('path')
-function resolve(dir) {
-  return path.join(__dirname, dir)
-}
+
+const resolve = dir => path.join(__dirname, dir);
 
 module.exports = {
   devServer: {
@@ -21,13 +20,11 @@ module.exports = {
     config
       .plugin('html')
       .tap(args => {
-        args[0].template = 'app/base/index.html'
+        args[0].template = 'app/index.html'
         return args
       })
 
-    config.resolve.alias.set("app:", resolve("app"));
-    config.resolve.alias.set("base:", resolve("app/base"));
-    config.resolve.alias.set("features:", resolve("app/features"));
+    config.resolve.alias.set("~", resolve("app"));
 
     docs
       .rule("docs")
