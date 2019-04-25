@@ -38,8 +38,14 @@
     "moduleResolution": "node", /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
     "baseUrl": ".", /* Base directory to resolve non-absolute module names. */
     "paths": {
-      "~app/*": [
-        "*"
+      "app:*": [
+        "app/*"
+      ],
+      "base:*": [
+        "app/base/*"
+      ],
+      "features:*": [
+        "app/features/*"
       ],
       "~schemas/*": [
         "./schemas/*"
@@ -62,10 +68,9 @@
     "skipLibCheck": true
   },
   "include": [
-    "server/**/*",
-    "schemas/**/*",
-    "model/**/*",
-    "client/**/*.ts",
-    "client/**/*.vue"
+    "./app/**/*.ts",
+    "./app/**/*.js",
+    "./app/**/*.vue",
+    "./config/**/*.ts"
   ]
 }

@@ -1,3 +1,8 @@
+const path = require('path')
+function resolve(dir) {
+  return path.join(__dirname, dir)
+}
+
 module.exports = {
   devServer: {
     proxy: {
@@ -16,9 +21,13 @@ module.exports = {
     config
       .plugin('html')
       .tap(args => {
-        args[0].template = 'client/index.html'
+        args[0].template = 'app/base/index.html'
         return args
       })
+
+    config.resolve.alias.set("app:", resolve("app"));
+    config.resolve.alias.set("base:", resolve("app/base"));
+    config.resolve.alias.set("features:", resolve("app/features"));
 
     docs
       .rule("docs")
@@ -33,7 +42,7 @@ module.exports = {
     loaderOptions: {
       sass: {
         data: `
-          @import "client/stylesheets/main.scss";
+          @import "app/base/stylesheet/main.scss";
         `
       }
     }

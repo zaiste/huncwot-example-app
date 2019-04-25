@@ -4,7 +4,7 @@ import router from './router';
 import store from './store';
 import apolloProvider from './graphql';
 
-import App from './components/App.vue';
+import App from 'app:/base/component/App.vue';
 
 Vue.config.productionTip = false;
 

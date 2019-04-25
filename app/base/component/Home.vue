@@ -16,7 +16,7 @@
 import { Component, Vue } from "vue-property-decorator";
 import Docs from "./Docs.vue";
 
-@Component({ docs: true, components: { Docs } })
+@Component({ components: { Docs } })
 export default class Home extends Vue {
   message: string = "This is the most basic component.";
 }
